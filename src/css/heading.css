@@ -1,0 +1,73 @@
+.heading-bg {
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #ADD8E6, #F7DC6F);
+    background-size: cover;
+    background-position: 0% 0%;
+    transition: background-position 0.5s;
+    animation: colorFade 10s infinite;
+
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    
+  }
+  
+  .heading-bg:hover {
+    background-position: 100% 0%;
+  }
+  
+  @keyframes colorFade {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 100% 0%;
+    }
+  }
+
+.context{
+    width: 60%;
+    /* align-items: center; */
+    /* text-align: center; */
+    margin-left: 5rem;
+    text-transform: uppercase;
+    
+}
+
+.context-jr h1{
+    width: 40%;
+    font-size: 50px;
+    vertical-align: bottom;
+
+}
+
+.x2Gen{
+    font-size: 70px;
+}
+
+.scootyImg{
+    width: 40%;
+
+}
+
+.context button{
+    padding: 15px;
+    background: #333;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.context-jr2 button{
+    padding: 10px;
+    width: 36%;
+    font-size: 50px;
+}
+
+.context-jr2 h4{
+    margin-top: 10px;
+}
+
+.scootyImg img{
+    width: 98%;
+    
+}

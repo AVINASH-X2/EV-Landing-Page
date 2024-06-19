@@ -1,0 +1,26 @@
+
+
+
+.colorsMain{
+    height: 100vh;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.context{
+    display: flex;
+    flex-direction: column;
+}
+
+.colors{
+    display: flex;
+    gap: 10px;
+    margin-left: 5rem;
+}
+
+.red, .green, .white, .blue, .yellow, .pink{
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
