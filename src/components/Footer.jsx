@@ -118,6 +118,15 @@ const Footer = () => {
         ))}
       </div>
         
+      <div className=" text-white ml-4 mt-4">
+        <h1 style={{fontSize: "33px"}}>Links</h1>
+        <ul  className=" mt-3 hover:cursor-pointer">
+          <li>Fests</li>
+          <li>Organizations</li>
+          <li>Alumnies</li>
+        </ul>
+      </div>
+
     </div>
   );
 };

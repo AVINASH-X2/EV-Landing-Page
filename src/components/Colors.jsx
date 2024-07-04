@@ -1,11 +1,43 @@
 import React, { useState } from "react";
-import "../css/colors.css"
+import "../css/colors.css";
+import { Images } from "./Images";
 
 const Colors = () => {
-  const [color, setColr] = useState("");
+  const [colorImage, setColorImage] = useState(null);
 
-    
-    
+  //Switch case approach...
+  // const handleColorClick = (color) => {
+  //   switch (color) {
+  //     case "red":
+  //       setColorImage(Images[0])
+  //       break;
+
+  //     case "white":
+  //       setColorImage(Images[1])
+  //       break;
+
+  //     case "yellow":
+  //       setColorImage(Images[2])
+  //       break;
+
+  //     case "green":
+  //       setColorImage(Images[3])
+  //       break;
+      
+  //     case "purple":
+  //       setColorImage(Images[4]);
+  //       break;
+      
+  //     default:
+  //       break;
+  //   }
+  // };
+
+  const handleColorClick = (color) => {
+    const image = Images.find(img => img.className === `image-${color}`);
+    setColorImage(image ? image.src : null);
+  }
+
   return (
     <div className="colorsMain">
       <div>
@@ -17,17 +49,15 @@ const Colors = () => {
           </p>
         </div>
         <div className="colors">
-          <div className="red" onClick={() =>setColr("red")}>Red</div>
-          <div className="green" onClick={() =>setColr("green")}>Green</div>
-          <div className="white" onClick={() =>setColr("white")}>White</div>
-          <div className="blue" onClick={() =>setColr("blue")}>Blue</div>
-          <div className="yellow" onClick={() =>setColr("yellow")}>Yellow</div>
-          <div className="pink" onClick={() =>setColr("pink")}>Pink</div>
+          <div className="red" onClick={() => handleColorClick("red")}>Red</div>
+          <div className="white" onClick={() => handleColorClick("white")}>White</div>
+          <div className="yellow" onClick={() => handleColorClick("yellow")}>Yellow</div>
+          <div className="purple" onClick={() => handleColorClick("purple")}>Purple</div>
         </div>
       </div>
-      <div className="imgs">
-              {setColr ? <h1>Your Color: { color }</h1> : <h1></h1>}
-      </div>
+
+      {colorImage && <img src={ colorImage} alt="Selected Color" className="selectedImage"/>}
+      
     </div>
   );
 };

@@ -1,26 +1,68 @@
-
-
-
-.colorsMain{
-    height: 100vh;
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
+.colors div {
+  display: inline-block;
+  padding: 10px;
+  cursor: pointer;
+  margin: 5px;
+  border: 1px solid #ddd;
 }
 
-.context{
-    display: flex;
-    flex-direction: column;
+.red {
+  background-color: #f00;
+  color: #fff;
+}
+.white {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ddd;
+}
+.yellow {
+  background-color: #ff0;
+  color: #000;
+}
+.green {
+  background-color: #0f0;
+  color: #000;
+}
+.purple {
+  background-color: purple;
+  color: #ccc;
 }
 
-.colors{
-    display: flex;
-    gap: 10px;
-    margin-left: 5rem;
+.selectedImage {
+  max-width: 46%;
+  height: auto;
 }
 
-.red, .green, .white, .blue, .yellow, .pink{
-    border: 2px solid #ccc;
-    border-radius: 50%;
-    cursor: pointer;
+.colorsMain {
+  height: 100vh;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.context {
+  display: flex;
+  flex-direction: column;
+}
+
+.colors {
+  display: flex;
+  gap: 10px;
+  margin-left: 5rem;
+}
+
+.red,
+.green,
+.white,
+.blue,
+.yellow,
+.pink,
+.purple {
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.white img {
+  width: 300px;
 }

@@ -4,7 +4,10 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import "../css/slider.css";
 
+import purple from "../assets/images/purple.png"
 import image from "../assets/images/scooty1.png";
+import white from "../assets/images/white.png"
+import yellow from "../assets/images/yellow.png"
 
 function App() {
   const config = {
@@ -17,7 +20,17 @@ function App() {
 
   const products = [
     {
-      img: image,
+      img: purple,
+      title: "Dolore Manga",
+      text: "Lorem Ipsum door sit omet elit.",
+    },
+    {
+      img: white,
+      title: "Dolore Manga",
+      text: "Lorem Ipsum door sit omet elit.",
+    },
+    {
+      img: yellow,
       title: "Dolore Manga",
       text: "Lorem Ipsum door sit omet elit.",
     },
@@ -27,17 +40,7 @@ function App() {
       text: "Lorem Ipsum door sit omet elit.",
     },
     {
-      img: image,
-      title: "Dolore Manga",
-      text: "Lorem Ipsum door sit omet elit.",
-    },
-    {
-      img: image,
-      title: "Dolore Manga",
-      text: "Lorem Ipsum door sit omet elit.",
-    },
-    {
-      img: image,
+      img: white,
       title: "Dolore Manga",
       text: "Lorem Ipsum door sit omet elit.",
     },
