@@ -5,6 +5,7 @@ import Heading from './components/Heading'
 import Boxes from './components/Boxes'
 import Slide from './components/Slide'
 import Colors from './components/Colors'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <Boxes />
       <Slide />
       <Colors />
+      <Footer />
     </>
   )
 }

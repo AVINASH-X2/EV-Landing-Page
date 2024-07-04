@@ -1,0 +1,28 @@
+
+
+
+
+.items{
+    border-bottom: 1px solid #ccc;
+}
+
+.items h3{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.fourth-class ul{
+    border-bottom: 1px solid #ccc;
+}
+
+ul li{
+    margin-bottom: 8px;
+}
+
+.company-heading .company{
+    margin-left: 17px;
+    margin-top: 50px;
+    font-size: 54px;
+}
+
+
