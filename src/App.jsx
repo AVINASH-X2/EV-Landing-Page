@@ -6,13 +6,17 @@ import Boxes from './components/Boxes'
 import Slide from './components/Slide'
 import Colors from './components/Colors'
 import Footer from './components/Footer'
+import Nav2 from './components/Nav2'
 
 function App() {
 
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
+
+      <Nav2 />
+
       <Heading />
       <Boxes />
       <Slide />

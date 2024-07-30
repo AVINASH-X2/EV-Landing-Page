@@ -66,3 +66,16 @@
 .white img {
   width: 300px;
 }
+
+
+
+@media (min-width: 480px){
+
+  .mainContainer{
+    display: flex;
+    flex-direction: column;
+
+    height: 150vh;
+  }
+
+}

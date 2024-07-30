@@ -89,8 +89,8 @@ function App() {
                 <div key={i} className="img-card">
                   <img className="img" src={x.img} />
                   <div className="card-body ">
-                    <div className="card-title">{x.title}</div>
-                    <div className="card-text">{x.text}</div>
+                    <div style={{marginLeft: "5px"}} className="card-title">{x.title}</div>
+                    <div style={{marginLeft: "5px", marginBottom: "5px"}} className="card-text">{x.text}</div>
                   </div>
                 </div>
               );

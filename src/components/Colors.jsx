@@ -40,7 +40,7 @@ const Colors = () => {
 
   return (
     <div className="colorsMain">
-      <div>
+      <div className="maincontainer">
         <div className="context">
           <h1>Color Your World: Choose Your Color</h1>
           <p>

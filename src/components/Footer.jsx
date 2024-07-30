@@ -65,7 +65,7 @@ const Footer = () => {
   };
 
   return (
-    <div className="footer-main h-lvh bg-black">
+    <div className="footer-main bg-black">
       <h1>Footer</h1>
       <div className="footer-second-main">
         {Object.keys(footerData).map((section, index) => (
